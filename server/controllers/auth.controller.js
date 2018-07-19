@@ -6,7 +6,7 @@ import config from '../../config/config'
 // prettier-ignore
 const signin = (req, res) => {
   User.findOne({
-    "email": req.body.email
+    email: req.body.email
   }, (err, user) => {
     if (err || !user)
       return res.status(401).json({

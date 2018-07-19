@@ -4,11 +4,11 @@ import authCtrl from '../controllers/auth.controller'
 const router = express.Router()
 
 // prettier-ignore
-router.route('/api/signin')
+router.route('/auth/signin')
   .post(authCtrl.signin)
 
 // prettier-ignore
-router.route('/api/sigout')
+router.route('/auth/sigout')
   .get(authCtrl.signout)
 
 export default router
