@@ -1,0 +1,37 @@
+{
+  "name": "express-mongoose-skeleton",
+  "version": "1.0.0",
+  "description": "Minimalistic backend utilizing Node (Express) and MongoDB (Mongoose). Will have users CRUD API along with basic auth checking.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanddc318/express-mongoose-skeleton.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "mongoose",
+    "auth",
+    "backend",
+    "only"
+  ],
+  "author": "Dontavious Sanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanddc318/express-mongoose-skeleton/issues"
+  },
+  "homepage": "https://github.com/sanddc318/express-mongoose-skeleton#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
