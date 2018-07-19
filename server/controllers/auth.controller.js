@@ -23,20 +23,24 @@ const signin = (req, res) => {
       _id: user._id
     }, config.jwtSecret)
 
-    // Optional: Set token to cookie
+    // Optional: Set token to cookie.
     res.cookie('t', token, {
       expire: new Date() + 9999
     })
 
-    // Return all credentials to client
+    // Return all credentials to client.
     return res.json({
       token,
-      user: { _id: user._id, name: user.name, email: user.email }
+      user: {
+        _id: user._id,
+        name: user.name,
+        email: user.email
+      }
     })
   })
 }
 
-// Only necessary if cookies are enabled on client
+// Only necessary if cookies are enabled on client.
 const signout = (req, res) => {
   res.clearCookie('t')
 

@@ -18,6 +18,7 @@ const getUniqueErrorMessage = (err) => {
 const getErrorMessage = (err) => {
   let message = ''
 
+  // prettier-ignore
   if (err.code) {
     switch (err.code) {
       case 11000:
@@ -29,8 +30,9 @@ const getErrorMessage = (err) => {
         message = 'Something went wrong.'
     }
   } else {
-    for (let errName in err.errors) {
-      if (err.errors[errName].message) message = err.errors[errName].message
+    for (let errName in err.errors) {    
+      if (err.errors[errName].message)
+        message = err.errors[errName].message
     }
   }
 
